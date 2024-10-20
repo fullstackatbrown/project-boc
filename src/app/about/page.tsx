@@ -1,8 +1,12 @@
 'use client';
+import NavBar from "../components/NavBar";
 
 export default function About() {
     return (
     <div className="h-full min-h-screen w-full">
+        <div>
+        <NavBar></NavBar>
+        </div>
         {/* Dynamic spacer based on header height */}
         <div style={{ minHeight: `5px` }}></div>
 
