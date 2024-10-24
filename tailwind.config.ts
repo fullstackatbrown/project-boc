@@ -15,7 +15,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        splash_page_background: '#69B069'
+        splash_page_background: '#69B069',
+        dark_green: "#418D41"
       },
     },
   },
