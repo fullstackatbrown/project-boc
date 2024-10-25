@@ -1,12 +1,11 @@
 'use client'
-import { useEffect, useState } from "react"
 
 function NavBar() {
     return (
         <nav>
           <ul className="flex justify-center space-x-6 text-white py-4 text-lg font-montserrat font-semibold">
             <li onClick={handleAboutClick} className="hover:text-gray-200 cursor-pointer">ABOUT</li>
-            <li onClick={handleEventsClick} className="hover:text-gray-200 cursor-pointer">EVENTS</li>
+            <li onClick={handleTripsClick} className="hover:text-gray-200 cursor-pointer">TRIPS</li>
             <li onClick={handleGetInvolvedClick} className="hover:text-gray-200 cursor-pointer">GET INVOLVED</li>
             <li onClick={handleRentalsClick} className="hover:text-gray-200 cursor-pointer">RENTALS</li>
             <li onClick={handleContactUsClick} className="hover:text-gray-200 cursor-pointer">CONTACT US</li>
@@ -16,23 +15,23 @@ function NavBar() {
 }
 
 const handleAboutClick = () => {
-  alert("Redirect to About Page");
+    window.location.href = "about";
 };
 
-const handleEventsClick = () => {
-  alert("Redirect to Trips Page");
+const handleTripsClick = () => {
+    window.location.href = "trips";
 };
 
 const handleGetInvolvedClick = () => {
-  alert("Redirect to Get Involved Page");
+    window.location.href = "get-involved";
 };
 
 const handleRentalsClick = () => {
-  alert("Redirect to Rentals Page");
+    window.location.href = "gear-room";
 };
 
 const handleContactUsClick = () => {
-  alert("Redirect to Contact Us Page");
+    window.location.href = "contact-us";
 };
 
 export default NavBar; // Make sure to export the component
