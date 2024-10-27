@@ -18,5 +18,5 @@ const app = initializeApp(firebaseConfig);
 // Initialize Cloud Firestore and get a reference to the service
 const db = getFirestore(app);
 
-const leadership = doc(db, "leadership", "2023-2024");
+const leadership = doc(db, "trips", "example trips");
 const fetch_leaders = await getDoc(leadership)
