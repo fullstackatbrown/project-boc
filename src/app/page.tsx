@@ -1,20 +1,27 @@
 "use client";
 import NavBar from "./components/NavBar";
-import ExploreButton from "./components/GreenButton";
+import GreenButton from "./components/GreenButton";
+import bear_vector from "./imgs/bear_vector.svg";
 
 export default function Home() {
   return (
-    <div className="bg-splash_page_background w-screen h-screen">
-      <div className="w-1/2 absolute right-0">
+    <div className="bg-boc_lightbrown w-screen h-screen ">
+
+      {/* Top Bar of nav options and bear logo*/}
+      <div className=" w-screen flex justify-between px-8 py-4">
+        <img src={bear_vector.src} alt="Bear Vector" />
         <NavBar></NavBar>
       </div>
 
-      <div className="h-full p-9 container mx-auto py-10 w-1/2 ml-20">
+      {/* Main Body */}
+      <div className="ml-20 pl-9 mt-20">
+         <h1 className="text-boc_logo_size text-boc_darkgreen font-montserrat font-bold mb-4 leading-tight">
+            BROWN OUTING <br /> CLUB
+          </h1>
+      </div>
+      <div className="pl-9 w-5/12 ml-20">
         <section className="flex-auto justify-end mb-8">
-          <h2 className="text-6xl text-white font-montserrat font-bold mb-4">
-            BROWN OUTING CLUB{" "}
-          </h2>
-          <p className="mb-2 text-white font-montserrat text-justify pb-8">
+          <p className="mb-2 text-black font-montserrat pb-8">
             The Brown Outing Club facilitates getting students together and into
             the outdoors. The club runs trips throughout the school year in New
             England and along the east coast. The BOC is entirely student
@@ -23,10 +30,10 @@ export default function Home() {
             rivers, and bays of the east during college, the BOC will help you
             get there!
           </p>
-          <ExploreButton
+          <GreenButton
             onClick={handleExploreClick}
             text="EXPLORE!"
-          ></ExploreButton>
+          ></GreenButton>
         </section>
       </div>
     </div>

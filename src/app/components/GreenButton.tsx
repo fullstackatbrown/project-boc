@@ -7,7 +7,7 @@ function GreenButton(props: { text: string; onClick: () => void }) {
   return (
     <button
       onClick={onClick}
-      className={`bg-dark_green hover:bg-green-700 text-white font-montserrat font-bold py-2 px-5 rounded`}
+      className={`bg-boc_darkgreen hover:bg-boc_slate text-lg text-white font-montserrat font-bold py-2 rounded-xl shadow-gray-700 shadow-md px-9`}
     >
       {text}
     </button>

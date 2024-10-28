@@ -15,8 +15,14 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        splash_page_background: '#69B069',
-        dark_green: "#418D41"
+        boc_green: '#69B069',
+        boc_darkgreen: "#418D41",
+        boc_darkbrown: "#461300",
+        boc_lightbrown: "#FDE6BB",
+        boc_slate: "#425863"
+      },
+      fontSize: {
+        'boc_logo_size': '75px', // Customize as needed
       },
     },
   },
