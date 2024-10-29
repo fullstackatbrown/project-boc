@@ -1,4 +1,5 @@
 'use client';
+import Schedule from "./schedule";
 
 export default function About() {
     return (
@@ -14,10 +15,11 @@ export default function About() {
                     Fill out the form to request a download link.
                 </div>
             </div>
-            
+            <Schedule />
             <div className="flex justify-center">
             </div>
         </div>
+        
         <div className="mb-[5vh]"></div>
     </div>);
 }
