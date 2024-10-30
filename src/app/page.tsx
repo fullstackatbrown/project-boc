@@ -2,6 +2,7 @@
 import NavBar from "./components/NavBar";
 import GreenButton from "./components/GreenButton";
 import bear_vector from "./imgs/bear_vector.svg";
+import SocialMedia from "./components/SocialMedia";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
             text="EXPLORE!"
           ></GreenButton>
         </section>
+        <SocialMedia></SocialMedia>
       </div>
     </div>
   );
