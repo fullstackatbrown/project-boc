@@ -40,7 +40,7 @@ const leadershipData = {
 };
 
 const LeadershipList = () => {
-  const renderLeadershipForYear = (year, data) => {
+  const renderLeadershipForYear = (year: string, data: Object) => {
     return (
       <div key={year} style={styles.yearContainer}>
         <h2 style={styles.headerText}>{year} Executive Leadership</h2>
