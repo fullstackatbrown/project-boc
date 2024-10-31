@@ -3,16 +3,24 @@ import NavBar from "./components/NavBar";
 import GreenButton from "./components/GreenButton";
 import bear_vector from "./imgs/bear_vector.svg";
 import SocialMedia from "./components/SocialMedia";
+import splash_graphic from "./imgs/splash_graphic.png";
 
 export default function Home() {
   return (
-    <div className="bg-boc_lightbrown w-screen h-screen ">
+    <div className="bg-boc_lightbrown w-screen h-screen relative z-0">
 
       {/* Top Bar of nav options and bear logo*/}
-      <div className=" w-screen flex justify-between px-8 py-4">
+      <div className=" w-screen flex justify-between px-8 py-4 z-10">
         <img src={bear_vector.src} alt="Bear Vector" />
         <NavBar></NavBar>
       </div>
+
+      {/* Splash Graphic */}
+      <img
+          src={splash_graphic.src}
+          alt="Splash Graphic"
+          className="w-1/2 h-auto absolute bottom-0 right-0 -z-10"
+        />
 
       {/* Main Body */}
       <div className="ml-20 pl-9 mt-20">
