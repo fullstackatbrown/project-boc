@@ -70,7 +70,6 @@ const LeadershipList = () => {
 const styles = {
   container: {
     padding: '20px',
-    backgroundColor: '#fff',
   },
   yearContainer: {
     marginBottom: '40px',
