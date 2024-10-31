@@ -46,6 +46,15 @@ export default function LandAcknowledgement() {
                     <p> Always feel free to reach out to us if you have any concerns, comments, or advice.
                     </p>
                 </div>
+
+                <div>
+                    <img src="/images/about/landacknowledgement/treeslandacknowledgement.png" 
+                    className="w-3/5 mx-auto mb-12"></img>
+                </div>
+                <div>
+                    <img src="/images/about/landacknowledgement/riverlandacknowledgement.png"
+                    className="w-3/5 mx-auto"></img>
+                </div>
             </div>
 
         </div>
