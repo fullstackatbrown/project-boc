@@ -42,10 +42,6 @@ export default function About() {
 
         <div id="content" className="text-center p-5">
             <div id="title-text" className="mt-[5vh] mb-4 text-4.5xl-responsive font-bold text-primary font-circ-std">
-                Data Download
-                <div id="explanation" className="mb-8 text-lg font-[100]">
-                    Fill out the form to request a download link.
-                </div>
                 <div>
                     <h1 className="mx-60 mb-8 text-black text-6xl font-bold mb-12 text-left leading-10">
                         About
