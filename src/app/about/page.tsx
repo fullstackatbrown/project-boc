@@ -104,4 +104,4 @@ export default function About() {
 
 const handleMailClick = () => {
     alert("Redirect to Mail Form");
-  };
+};
