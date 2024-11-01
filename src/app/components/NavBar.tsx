@@ -1,4 +1,5 @@
 'use client'
+import { useEffect, useState } from "react"
 
 function NavBar() {
     return (
@@ -13,23 +14,23 @@ function NavBar() {
 }
 
 const handleAboutClick = () => {
-    window.location.href = "about";
+  alert("Redirect to About Page");
 };
 
 const handleTripsClick = () => {
-    window.location.href = "trips";
+  alert("Redirect to Trips Page");
 };
 
 const handleGetInvolvedClick = () => {
-    window.location.href = "get-involved";
+  alert("Redirect to Get Involved Page");
 };
 
 const handleRentalsClick = () => {
-    window.location.href = "gear-room";
+  alert("Redirect to Rentals Page");
 };
 
 const handleContactUsClick = () => {
-    window.location.href = "contact-us";
+  alert("Redirect to Contact Us Page");
 };
 
 export default NavBar; // Make sure to export the component
