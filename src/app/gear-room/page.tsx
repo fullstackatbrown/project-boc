@@ -1,5 +1,6 @@
 'use client';
 import NavBar from "../components/NavBar";
+import Schedule from "./schedule";
 
 export default function GearRoom() {
     return (
@@ -18,10 +19,11 @@ export default function GearRoom() {
                     Fill out the form to request a download link.
                 </div>
             </div>
-            
+            <Schedule />
             <div className="flex justify-center">
             </div>
         </div>
+        
         <div className="mb-[5vh]"></div>
     </div>);
 }
