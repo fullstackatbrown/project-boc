@@ -1,6 +1,7 @@
 'use client';
 import NavBar from "../components/NavBar";
 import Schedule from "./schedule"
+import "./gear-room.css"
 
 export default function GearRoom() {
     return (
