@@ -1,5 +1,6 @@
 'use client';
 import NavBar from "../components/NavBar";
+import Schedule from "./schedule"
 
 export default function GearRoom() {
     return (
@@ -58,6 +59,7 @@ export default function GearRoom() {
                     </p>
 
                 </main>
+                <Schedule />
 
             </div>
         </div>
