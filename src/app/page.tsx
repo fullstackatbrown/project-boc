@@ -4,6 +4,7 @@ import GreenButton from "./components/GreenButton";
 import bear_vector from "./imgs/bear_vector.svg";
 import SocialMedia from "./components/SocialMedia";
 import splash_graphic from "./imgs/splash_graphic.png";
+import PawPrints from "./components/PawPrints";
 
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
           ></GreenButton>
         </section>
         <SocialMedia></SocialMedia>
+        <PawPrints></PawPrints>
       </div>
     </div>
   );
