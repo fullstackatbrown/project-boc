@@ -1,11 +1,14 @@
 'use client';
 import NavBar from "../../components/NavBar";
+import bear_vector from "../../imgs/bear_vector.svg";
+import WhiteWaterBanner from "../../components/WhiteWaterBanner";
 
 export default function LandAcknowledgement() {
     return (
         
         <div className="h-full min-h-screen w-full">
-            <div>
+            <div className=" w-screen flex justify-between px-8 py-4 z-10">
+                <img src={bear_vector.src} alt="Bear Vector" />
                 <NavBar></NavBar>
             </div>
             {/* Dynamic spacer based on header height */}
