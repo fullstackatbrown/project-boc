@@ -1,0 +1,27 @@
+.gear-table-container {
+  position: absolute;
+  margin-right: 64px;
+  right: 0;
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 300px;
+}
+.gear-table {
+  position: absolute;
+  right: 0;
+  border-collapse: collapse;
+  width: 300px;
+}
+
+.gear-table-header {
+  border: 1px solid black;
+  padding: 8px;
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gear-table-cell {
+  border: 1px solid black;
+  padding: 8px;
+}

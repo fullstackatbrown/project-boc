@@ -1,0 +1,33 @@
+.entry-header {
+    text-align: left;
+}
+
+.entry-title {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, arial, sans-serif;
+    font-size: 3rem;
+    line-height: 2;
+    margin-left: 400px;
+    font-weight: bold;
+}
+
+.entry-content {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 405px;
+    margin-inline-end: 405px;
+}
+
+h2 {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, arial, sans-serif;
+    font-size: 2rem;
+    line-height: 2;
+    margin-left: 400px;
+    font-weight: bold;
+}
+
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 405px;
+    margin-inline-end: 405px;
+}
