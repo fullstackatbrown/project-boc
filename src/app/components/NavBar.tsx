@@ -14,23 +14,23 @@ function NavBar() {
 }
 
 const handleAboutClick = () => {
-  alert("Redirect to About Page");
+  window.location.href = "about"
 };
 
 const handleTripsClick = () => {
-  alert("Redirect to Trips Page");
+  window.location.href = "trips"
 };
 
 const handleGetInvolvedClick = () => {
-  alert("Redirect to Get Involved Page");
+  window.location.href = "get-involved"
 };
 
 const handleRentalsClick = () => {
-  alert("Redirect to Rentals Page");
+  window.location.href = "gear-room"
 };
 
 const handleContactUsClick = () => {
-  alert("Redirect to Contact Us Page");
+  window.location.href = "contact-us"
 };
 
 export default NavBar; // Make sure to export the component
