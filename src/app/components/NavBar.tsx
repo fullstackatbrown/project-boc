@@ -14,23 +14,23 @@ function NavBar() {
 }
 
 const handleAboutClick = () => {
-  window.location.href = "about"
+  window.location.href = "/about"
 };
 
 const handleTripsClick = () => {
-  window.location.href = "trips"
+  window.location.href = "/trips"
 };
 
 const handleGetInvolvedClick = () => {
-  window.location.href = "get-involved"
+  window.location.href = "/get-involved"
 };
 
 const handleRentalsClick = () => {
-  window.location.href = "gear-room"
+  window.location.href = "/gear-room"
 };
 
 const handleContactUsClick = () => {
-  window.location.href = "contact-us"
+  window.location.href = "/contact-us"
 };
 
 export default NavBar; // Make sure to export the component

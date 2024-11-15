@@ -1,6 +1,6 @@
 'use client';
 import NavBar from "../components/NavBar";
-import JoinMailListButton from "../components/WhiteButton";
+import WhiteButton from "../components/WhiteButton";
 import WhiteWaterBanner from "../components/WhiteWaterBanner";
 import bear_vector from "../imgs/bear_vector.svg";
 
@@ -19,10 +19,10 @@ export default function About() {
             text="ABOUT"
         ></WhiteWaterBanner>
         <div id="content" className="text-center mt-8">
-            <JoinMailListButton
+            <WhiteButton
                 onClick={handleMailClick}
                 text="Join Our Mailing List!"
-            ></JoinMailListButton>
+            ></WhiteButton>
         </div>
 
         <div id="content" className="text-center p-5">
@@ -58,6 +58,16 @@ export default function About() {
                     </p>
                 </div>
             </div>
+            <div id="content" className="text-center mt-8 mb-8 flex justify-center gap-4">
+                <WhiteButton
+                    onClick={handleLandClick}
+                    text="Land Acknowledgement"
+                ></WhiteButton>
+                <WhiteButton
+                    onClick={handleTeamClick}
+                    text="Meet Our Team!"
+                ></WhiteButton>
+            </div>
             <div>
                 <img 
                     src="/images/about/AboutRiver.png"
@@ -72,5 +82,13 @@ export default function About() {
 }
 
 const handleMailClick = () => {
-    alert("Redirect to Mail Form");
+    window.location.href = "/about/MailingList"
+};
+
+const handleLandClick = () => {
+    window.location.href = "/about/LandAcknowledgement"
+};
+
+const handleTeamClick = () => {
+    window.location.href = "/about/MeetOurTeam"
 };
