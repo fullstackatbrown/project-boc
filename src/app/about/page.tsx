@@ -60,6 +60,10 @@ export default function About() {
             </div>
             <div id="content" className="text-center mt-8 mb-8 flex justify-center gap-4">
                 <WhiteButton
+                    onClick={handleMissionClick}
+                    text="Mission"
+                ></WhiteButton>
+                <WhiteButton
                     onClick={handleLandClick}
                     text="Land Acknowledgement"
                 ></WhiteButton>
@@ -92,3 +96,7 @@ const handleLandClick = () => {
 const handleTeamClick = () => {
     window.location.href = "/about/MeetOurTeam"
 };
+
+const handleMissionClick = () => {
+    window.location.href = "/about/Mission"
+}
