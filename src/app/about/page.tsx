@@ -1,23 +1,20 @@
 'use client';
-import NavBar from "../components/NavBar";
-import WhiteButton from "../components/WhiteButton";
-import WhiteWaterBanner from "../components/WhiteWaterBanner";
-import bear_vector from "../imgs/bear_vector.svg";
+import NavBar from "@/components/NavBar";
+import WhiteButton from "@/components/WhiteButton";
+import WhiteWaterBanner from "@/components/WhiteWaterBanner";
+
+import AboutRiver from "@/assets/images/AboutRiver.png"
 
 export default function About() {
     return (
     <div className="h-full min-h-screen w-full">
-      <div className=" w-screen flex justify-between px-8 py-4 z-10">
-        <img src={bear_vector.src} alt="Bear Vector" />
         <NavBar></NavBar>
-      </div>
-        {/* Dynamic spacer based on header height */}
-        <div style={{ minHeight: `5px` }}></div>
 
         {/* Site content */}
         <WhiteWaterBanner
             text="ABOUT"
         ></WhiteWaterBanner>
+
         <div id="content" className="text-center mt-8">
             <WhiteButton
                 onClick={handleMailClick}
@@ -74,7 +71,7 @@ export default function About() {
             </div>
             <div>
                 <img 
-                    src="/images/about/AboutRiver.png"
+                    src={AboutRiver.src}
                     className="w-3/5 mx-auto mb-8"
                 />
             </div>
@@ -86,17 +83,17 @@ export default function About() {
 }
 
 const handleMailClick = () => {
-    window.location.href = "/about/MailingList"
+    window.location.href = "/about/mailing-list"
 };
 
 const handleLandClick = () => {
-    window.location.href = "/about/LandAcknowledgement"
+    window.location.href = "/about/land-acknowledgement"
 };
 
 const handleTeamClick = () => {
-    window.location.href = "/about/MeetOurTeam"
+    window.location.href = "/about/meet-our-team"
 };
 
 const handleMissionClick = () => {
-    window.location.href = "/about/Mission"
+    window.location.href = "/about/mission"
 }

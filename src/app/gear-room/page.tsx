@@ -1,18 +1,24 @@
 "use client";
-import NavBar from "../components/NavBar";
-import bear_vector from "../imgs/bear_vector.svg";
+import NavBar from "@/components/NavBar";
+import "@/styles/gear-room.css";
+
 import Schedule from "./schedule";
-import "./gear-room.css";
 import GearTable from "./gear-rental";
 
 export default function GearRoom() {
   return (
     <div className="h-full min-h-screen w-full">
+<<<<<<< HEAD
       {/* Top Bar of nav options and bear logo*/}
       <div className=" w-screen flex justify-between px-8 py-4 z-10">
         <img src={bear_vector.src} alt="Bear Vector" />
         <NavBar></NavBar>
       </div>
+=======
+      <NavBar></NavBar>
+      {/* Dynamic spacer based on header height */}
+      <div style={{ minHeight: `5px` }}></div>
+>>>>>>> about
 
       {/* Site content */}
       <div id="content" className="site-content">
