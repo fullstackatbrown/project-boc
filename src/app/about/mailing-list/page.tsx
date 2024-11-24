@@ -1,9 +1,8 @@
 "use client";
-import NavBar from "../../components/NavBar";
+import NavBar from "@/components/NavBar";
+import Subscribe from "@/components/WhiteButton";
+import WhiteWaterBanner from "@/components/WhiteWaterBanner";
 import { useState } from "react";
-import Subscribe from "../../components/WhiteButton";
-import WhiteWaterBanner from "../../components/WhiteWaterBanner";
-import bear_vector from "../../imgs/bear_vector.svg";
 
 export default function MailingList() {
     const [email, setEmail] = useState("");
@@ -16,10 +15,7 @@ export default function MailingList() {
 
     return (
         <div className="h-full min-h-screen w-full">
-            <div className="w-screen flex justify-between px-8 py-4 z-10">
-                <img src={bear_vector.src} alt="Bear Vector" />
-                <NavBar />
-            </div>
+            <NavBar />
             {/* Dynamic spacer based on header height */}
             <div style={{ minHeight: `5px` }}></div>
     

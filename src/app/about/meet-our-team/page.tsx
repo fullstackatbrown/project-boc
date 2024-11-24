@@ -1,8 +1,8 @@
 'use client';
-import NavBar from "../../components/NavBar";
-import ExecutiveLeadership from '../MeetOurTeam/ExecutiveLeadership'; // Adjust the path as needed
-import bear_vector from "../../imgs/bear_vector.svg";
-import WhiteWaterBanner from "../../components/WhiteWaterBanner";
+import NavBar from "@/components/NavBar";
+import ExecutiveLeadership from 'ExecutiveLeadership'; // Adjust the path as needed
+import bear_vector from "@/assets/images/bear_vector.svg";
+import WhiteWaterBanner from "@/components/WhiteWaterBanner";
 
 export default function About() {
     return (
