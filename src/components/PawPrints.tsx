@@ -1,16 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-<<<<<<< HEAD:src/components/PawPrints.tsx
 import image1 from '@/assets/images/image1.png';
 import singlepaw from '@/assets/images/PAW.png';
 
-=======
-import image1 from '../components/image1.png';
-import singlepaw from '../components/PAW.png';
-<<<<<<< HEAD:src/components/PawPrints.tsx
->>>>>>> ddf5def (social media visible at this point):src/app/components/PawPrints.tsx
-=======
->>>>>>> ddf5def (social media visible at this point):src/app/components/PawPrints.tsx
 const PawPrints = () => {
     const pawPrintImages = [
         {
@@ -83,16 +75,4 @@ const PawPrints = () => {
         </div>
     );
 };
-<<<<<<< HEAD:src/components/PawPrints.tsx
-<<<<<<< HEAD:src/components/PawPrints.tsx
-<<<<<<< HEAD:src/components/PawPrints.tsx
 export default PawPrints;
-=======
-export default PawPrints;
->>>>>>> ddf5def (social media visible at this point):src/app/components/PawPrints.tsx
-=======
-export default PawPrints;
->>>>>>> ddf5def (social media visible at this point):src/app/components/PawPrints.tsx
-=======
-export default PawPrints;
->>>>>>> ddf5def (social media visible at this point):src/app/components/PawPrints.tsx
