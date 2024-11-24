@@ -1,20 +1,17 @@
 "use client";
-import NavBar from "./components/NavBar";
-import GreenButton from "./components/GreenButton";
-import bear_vector from "./imgs/bear_vector.svg";
-import SocialMedia from "./components/SocialMedia";
-import splash_graphic from "./imgs/splash_graphic.png";
-import PawPrints from "./components/PawPrints";
+import NavBar from "@/components/NavBar";
+import GreenButton from "@/components/GreenButton";
+import SocialMedia from "@/components/SocialMedia";
+import PawPrints from "@/components/PawPrints";
+
+import splash_graphic from "@/assets/images/splash_graphic.png";
 
 export default function Home() {
   return (
     <div className="bg-boc_lightbrown w-screen h-screen relative z-0">
 
       {/* Top Bar of nav options and bear logo*/}
-      <div className=" w-screen flex justify-between px-8 py-4 z-10">
-        <img src={bear_vector.src} alt="Bear Vector" />
-        <NavBar></NavBar>
-      </div>
+      <NavBar></NavBar>
 
       {/* Splash Graphic */}
       <img

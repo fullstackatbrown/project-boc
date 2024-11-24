@@ -1,12 +1,14 @@
 "use client";
-import NavBar from "../components/NavBar";
+import NavBar from "@/components/NavBar";
+import "@/styles/gear-room.css";
+
 import Schedule from "./schedule";
-import "./gear-room.css";
 import GearTable from "./gear-rental";
 
 export default function GearRoom() {
   return (
     <div className="h-full min-h-screen w-full">
+      <NavBar></NavBar>
       {/* Dynamic spacer based on header height */}
       <div style={{ minHeight: `5px` }}></div>
 
