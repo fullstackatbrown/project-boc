@@ -5,7 +5,7 @@ import WhiteWaterBanner from "@/components/WhiteWaterBanner";
 
 import AboutRiver from "@/assets/images/AboutRiver.png"
 
-export default function About() {
+export default function Mission() {
     return (
     <div className="h-full min-h-screen w-full">
         <NavBar></NavBar>
@@ -14,7 +14,7 @@ export default function About() {
 
         {/* Site content */}
         <WhiteWaterBanner
-            text="ABOUT"
+            text="MISSION"
         ></WhiteWaterBanner>
         <div id="content" className="text-center mt-8">
             <WhiteButton
