@@ -22,28 +22,12 @@
       }
     ],
     "paths": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "@/*": ["src/*"]
-    }
-  },
-  "include": ["next-env.d.ts", "src", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
-=======
       "@/*": [
         "./src/*"
       ]
     },
     "target": "ES2017"
   },
-=======
-      "@/*": [
-        "./src/*"
-      ]
-    },
-    "target": "ES2017"
-  },
->>>>>>> ddf5def (social media visible at this point)
   "include": [
     "next-env.d.ts",
     "**/*.ts",
@@ -53,8 +37,4 @@
   "exclude": [
     "node_modules"
   ]
-<<<<<<< HEAD
->>>>>>> ddf5def (social media visible at this point)
-=======
->>>>>>> ddf5def (social media visible at this point)
 }
