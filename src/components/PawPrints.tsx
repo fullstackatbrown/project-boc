@@ -50,7 +50,6 @@ const PawPrints = () => {
             objectPosition: '25% 25%',
         },
     ];
-
     return (
         <div>
             {pawPrintImages.map((imageData, index) => (
@@ -76,5 +75,4 @@ const PawPrints = () => {
         </div>
     );
 };
-
 export default PawPrints;
