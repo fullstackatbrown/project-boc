@@ -1,8 +1,8 @@
 'use client';
-import NavBar from "../components/NavBar";
-import WhiteButton from "../components/WhiteButton";
-import WhiteWaterBanner from "../components/WhiteWaterBanner";
-import bear_vector from "../imgs/bear_vector.svg";
+import NavBar from "@/components/NavBar";
+import WhiteButton from "@/components/WhiteButton";
+import WhiteWaterBanner from "@/components/WhiteWaterBanner";
+import bear_vector from "@/assets/images/bear_vector.svg";
 
 export default function About() {
     return (
