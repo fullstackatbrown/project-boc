@@ -41,25 +41,24 @@ const SocialMedia: React.FC = () => {
 
     return (
         <div style={containerStyles}>
-            {socialLinks.map(({ href, src, alt, label }, index) => (
-                <a
-                    key={index}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                    style={linkStyles}
-                >
-                    <Image 
-                        src={src} 
-                        alt={alt} 
-                        width={40} 
-                        height={40} 
-                        priority 
-                    />
-                </a>
-            ))}
-        </div>
+        {socialLinks.map(({ href, src, alt, label }, index) => (
+            <a
+            key={index}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            style={linkStyles}
+            >
+            <Image 
+            src={src} 
+            alt={alt} 
+            width={40} 
+            height={40} 
+            priority 
+            />
+        },
+        ));
     );
 };
 
