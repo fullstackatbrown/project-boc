@@ -75,4 +75,8 @@ const PawPrints = () => {
         </div>
     );
 };
+<<<<<<< HEAD:src/components/PawPrints.tsx
 export default PawPrints;
+=======
+export default PawPrints;
+>>>>>>> ddf5def (social media visible at this point):src/app/components/PawPrints.tsx
