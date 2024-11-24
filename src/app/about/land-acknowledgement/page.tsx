@@ -2,6 +2,9 @@
 import NavBar from "@/components/NavBar";
 import WhiteWaterBanner from "@/components/WhiteWaterBanner";
 
+import Image1 from "@/assets/images/riverlandacknowledgement.png"
+import Image2 from "@/assets/images/treeslandacknowledgement.png"
+
 export default function LandAcknowledgement() {
     return (
         
@@ -47,11 +50,11 @@ export default function LandAcknowledgement() {
                 </div>
 
                 <div>
-                    <img src="/images/about/landacknowledgement/treeslandacknowledgement.png" 
+                    <img src={Image1.src} 
                     className="w-3/5 mx-auto mb-12"></img>
                 </div>
                 <div>
-                    <img src="/images/about/landacknowledgement/riverlandacknowledgement.png"
+                    <img src={Image2.src}
                     className="w-3/5 mx-auto"></img>
                 </div>
             </div>
