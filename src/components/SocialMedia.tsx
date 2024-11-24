@@ -1,5 +1,6 @@
 import Instagram from "@/assets/images/instagram.png";
 import Twitter from "@/assets/images/twitter.png";
+import Facebook from "@/assets/images/facebook.png";
 import React from 'react';
 import Image from 'next/image';
 
