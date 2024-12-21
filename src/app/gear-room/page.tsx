@@ -41,7 +41,7 @@ export default function GearRoom() {
               can be in flux week-by-week. Make sure to check our This Week
               Outside email each week for exact updates!
             </p>
-            <h2>How doI rent gear?</h2>
+            <h2>How do I rent gear?</h2>
             <p>
               BOC gear is available for personal use by any Brown community
               member. To check out gear, follow these steps:
@@ -91,7 +91,7 @@ export default function GearRoom() {
             </p>
           </main>
           <Schedule />
-          <GearTable />
+          <div class="flex-auto"><GearTable /></div>
         </div>
       </div>
     </div>

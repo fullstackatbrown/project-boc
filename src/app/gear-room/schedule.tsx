@@ -14,11 +14,11 @@ let dates: Day[] = [
 
 export default function Schedule() {
     return <>
-        <table className="table-fixed w-full bg-green-200 border-4 border-green-800 max-w-5xl text-2xl font-bold ">
+        <table className="table-fixed w-full max-w-5xl text-2xl font-bold ">
             <tbody>
                 
-                <tr className="border border-gray-300 px-4 py-2">
-                    {dates.map((day) => <td className="border-4 border-green-800 px-4 py-2 align-text-top">{dayToCol(day)}</td>)}
+                <tr className="px-4 py-2">
+                    {dates.map((day) => <td className="border-green-800 px-4 py-2 align-text-top">{dayToCol(day)}</td>)}
                 </tr>
                 
             </tbody>
