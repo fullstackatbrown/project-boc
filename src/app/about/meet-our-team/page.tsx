@@ -1,6 +1,6 @@
 'use client';
 import NavBar from "@/components/NavBar";
-import ExecutiveLeadership from './ExecutiveLeadership'; // Adjust the path as needed
+import ExecutiveLeadership from './leadership';
 import WhiteWaterBanner from "@/components/WhiteWaterBanner";
 
 export default function About() {

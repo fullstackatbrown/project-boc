@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 // Updated data structure to include multiple years of leadership
 const leadershipData = {
   "2023-2024": {

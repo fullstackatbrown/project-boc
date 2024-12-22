@@ -20,3 +20,5 @@ const db = getFirestore(app);
 
 const leadership = doc(db, "trips", "example trips");
 const fetch_leaders = await getDoc(leadership)
+
+export const database = getDatabase(app);
