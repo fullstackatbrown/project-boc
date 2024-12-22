@@ -1,31 +1,25 @@
 "use client";
 import background from "@/assets/images/WhiteWaterRafting.jpeg";
 
-function WhiteWaterBanner(props: { text: string}) {
+function WhiteWaterBanner(props: { text: string }) {
   const { text } = props;
-  
+
   return (
-    <div style={{ 
-      position: 'relative', // Set relative positioning for the parent div
-      minHeight: '75vh' // Sets the height for the background area
-    }}>
-        <div style={{ 
-            backgroundImage: `url(${background.src})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            opacity: 0.8,
-            position: 'absolute',
-            top: 20,
-            left: 50,
-            right: 50,
-            bottom: 20,
-            zIndex: -1 // Place it behind the content
-        }} />
-        <div className="flex flex-col items-center justify-center h-[75vh] bg-beige mx-auto max-w-8xl px-16 py-12 text-center">
-        <div className="text-9xl font-bold tracking-wide" style={{ color: 'rgba(255, 255, 204, 0.9)' }}>
-            {text}
+    <div className="relative h-[25em]">
+      <div
+        className="absolute top-5 left-12 right-12 bottom-5 bg-cover bg-center opacity-70 -z-10 rounded-[3em]"
+        style={{
+          backgroundImage: `url(${background.src})`,
+        }}
+      />
+      <div
+        className="absolute top-5 left-12 right-12 bottom-5 bg-[#000000] bg-cover bg-center opacity-10 -z-10 rounded-[3em]"
+      />
+      <div className="flex flex-col items-center justify-center h-[100%] bg-beige mx-auto max-w-8xl px-16 py-12 text-center">
+        <div className="text-9xl font-bold tracking-wide text-yellow-100/90">
+          {text}
         </div>
-        </div>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 'use client';
 import NavBar from "@/components/NavBar";
-import ExecutiveLeadership from './leadership';
+import LeadershipList from '@/components/Leadership';
 import WhiteWaterBanner from "@/components/WhiteWaterBanner";
 
 export default function About() {
@@ -17,7 +17,7 @@ export default function About() {
 
 
         <div id="content" className="text-center p-5">
-            <ExecutiveLeadership />
+            <LeadershipList />
             <div className="flex justify-center">
             </div>
         </div>

@@ -4,24 +4,24 @@ import React from 'react';
 // Updated data structure to include multiple years of leadership
 const leadershipData = {
   "2023-2024": {
-    "Presidents": "Caroline Sassan & Ayan Rahman",
+    "Presidents": ["Caroline Sassan", "Ayan Rahman"],
     "Vice President": "Lara Simshauser",
-    "Gear Room Managers": "Adnan Aldabbagh & Laurie Tamayo",
+    "Gear Room Managers": ["Adnan Aldabbagh", "Laurie Tamayo"],
     "Diversity & Inclusion Chair": "Anila Marks"
   },
   "2022-2023": {
-    "Presidents": "Hannah Bashkow & Ulysses Chevez",
+    "Presidents": ["Hannah Bashkow", "Ulysses Chevez"],
     "Vice President:": "Cal Stellato",
   },
   "2021-2022": {
-    "Presidents": "Eva Kitlen & Aidan Wang",
-    "Gear Room Managers": "Cali Rivera & Daniel Graves",
+    "Presidents": ["Eva Kitlen", "Aidan Wang"],
+    "Gear Room Managers": ["Cali Rivera", "Daniel Graves"],
     "Diversity & Inclusion Chair": "Alec Lacerte"
   },
   "2019-2020": {
-    "Presidents": "Max Kozlov & Anna Pasnau",
+    "Presidents": ["Max Kozlov", "Anna Pasnau"],
     "Vice President": "Gabi Gil",
-    "Gear Room Managers": "Aidan Wang & Ainsley Clapp"
+    "Gear Room Managers": ["Aidan Wang", "Ainsley Clapp"]
   },
   "2018-2019": {
     "Presidents": "Charlotte Haslett & Lucas Smolcic Larson",
@@ -29,12 +29,12 @@ const leadershipData = {
     "Gear Room Manager": "Ethan Pierce"
   },
   "2017-2018": {
-    "Presidents": "Austen Sharpe & Zoe Gates",
+    "Presidents": ["Austen Sharpe", "Zoe Gates"],
     "Vice President": "Lucas Smolcic Larson",
     "Gear Room Manager": "Ethan Pierce"
   },
   "2016-2017": {
-    "Presidents": "Charlotte Haslett & Clayton Sanford",
+    "Presidents": ["Charlotte Haslett", "Clayton Sanford"],
     "Vice President": "Lena Milton",
     "Gear Room Manager": "Camila Lupi"
   }

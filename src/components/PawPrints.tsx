@@ -9,8 +9,8 @@ const PawPrints = () => {
             src: singlepaw,
             styles: {
                 position: 'absolute',
-                top: '450px',
-                left: '875px',
+                top: '70%',
+                left: '62%',
                 transform: 'rotate(-40deg) scale(0.55)',
                 filter: 'contrast(1.1) brightness(1.05)',
             },
@@ -20,8 +20,8 @@ const PawPrints = () => {
             src: singlepaw,
             styles: {
                 position: 'absolute',
-                top: '410px',
-                left: '825px',
+                top: '59%',
+                left: '59%',
                 transform: 'rotate(-40deg) scale(0.47)',
                 filter: 'contrast(1.1) brightness(1.05)',
             },
@@ -31,8 +31,8 @@ const PawPrints = () => {
             src: image1,
             styles: {
                 position: 'absolute',
-                top: '350px',
-                left: '775px',
+                top: '49%',
+                left: '55%',
                 transform: 'rotate(-30deg) scaleX(-1) scale(0.8)',
                 filter: 'contrast(1.1) brightness(1.05)',
             },
@@ -42,8 +42,8 @@ const PawPrints = () => {
             src: image1,
             styles: {
                 position: 'absolute',
-                top: '275px',
-                left: '740px',
+                bottom: '47%',
+                left: '53%',
                 transform: 'rotate(-9deg) scale(0.8)',
                 filter: 'contrast(1.1) brightness(1.05)',
             },
@@ -52,26 +52,26 @@ const PawPrints = () => {
     ];
     return (
         <div>
-            {pawPrintImages.map((imageData, index) => (
-                <div
-                    key={index}
-                    style={{
-                        width: '100px',
-                        height: '100px',
-                        position: 'relative', // Removed from imageData.styles, as it's now set here
-                        overflow: 'hidden',
-                        ...imageData.styles,
-                    }}
-                >
-                    <Image
-                        src={imageData.src}
-                        alt={`Paw print ${index + 1}`}
-                        layout="fill"
-                        objectFit="cover"
-                        objectPosition={imageData.objectPosition || 'center center'} // Default objectPosition if not provided
-                    />
-                </div>
-            ))}
+        {pawPrintImages.map((imageData, index) => (
+            <div
+            key={index}
+            style={{
+                width: '100px',
+                height: '100px',
+                position: 'absolute', // Removed from imageData.styles, as it's now set here
+                overflow: 'hidden',
+                ...imageData.styles,
+            }}
+            >
+            <Image
+            src={imageData.src}
+            alt={`Paw print ${index + 1}`}
+            layout="fill"
+            objectFit="cover"
+            objectPosition={imageData.objectPosition || 'center center'} // Default objectPosition if not provided
+            />
+            </div>
+        ))}
         </div>
     );
 };
