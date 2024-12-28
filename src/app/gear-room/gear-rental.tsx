@@ -26,22 +26,21 @@ const gearList = [
 
 const GearTable = () => {
   return (
-    <div className="gear-table-container">
-      <h1>Gear Rental List</h1>
-      <table className="gear-table">
+    <div>
+      <table>
         <thead>
           <tr>
-            <th className="gear-table-header">Item</th>
-            <th className="gear-table-header">Weekly Rental Fee</th>
-            <th className="gear-table-header">Price</th>
+            <th>Item</th>
+            <th>Weekly Rental Fee</th>
+            <th>Price</th>
           </tr>
         </thead>
         <tbody>
           {gearList.map((gear, index) => (
             <tr key={index}>
-              <td className="gear-table-cell">{gear.item}</td>
-              <td className="gear-table-cell">{gear.weeklyRentalFee}</td>
-              <td className="gear-table-cell">${gear.price}</td>
+              <td>{gear.item}</td>
+              <td>{gear.weeklyRentalFee}</td>
+              <td>${gear.price}</td>
             </tr>
           ))}
         </tbody>
