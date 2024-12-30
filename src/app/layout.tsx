@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleOAuthProvider } from "@react-oauth/google"
 import localFont from "next/font/local";
 import "@/styles/globals.css";
 
@@ -12,11 +13,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
   return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
-    </html>
+    <GoogleOAuthProvider clientId={CLIENT_ID}>
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    </GoogleOAuthProvider>
   );
 }

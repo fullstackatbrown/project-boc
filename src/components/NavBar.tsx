@@ -1,14 +1,16 @@
 "use client";
-import { useEffect, useState } from "react";
 import bear_vector from "@/assets/images/bear_vector.svg";
+import SignIn from "@/components/SignIn";
 
-function NavButton({ text, func }) {
+function NavButton({ children, func }) {
   return (
     <button
       onClick={func}
-      className="hover:text-white hover:bg-boc_slate py-2 px-4 hover:rounded-lg cursor-pointer hover:shadow-gray-700 hover:shadow"
+      className="hover:text-white hover:bg-boc_slate py-2 
+      px-4 hover:rounded-lg cursor-pointer 
+      hover:shadow-gray-700 hover:shadow"
     >
-      {text}
+      {children}
     </button>
   );
 }
@@ -22,11 +24,16 @@ function NavBar() {
         alt="Bear Vector"
         className="cursor-pointer"
       />
-      <div className="flex space-x-5 text-boc_darkbrown py-4 text-xl font-montserrat font-bold">
-        <NavButton text="HOME" func={handleHomeClick} />
-        <NavButton text="ABOUT" func={handleAboutClick} />
-        <NavButton text="RENTALS" func={handleRentalsClick} />
-        <NavButton text="CONTACT" func={handleContactUsClick} />
+      <div
+        className="flex space-x-5 text-boc_darkbrown py-4 
+      text-xl font-montserrat font-bold align-center"
+      >
+        <NavButton func={handleHomeClick}>HOME</NavButton>
+        <NavButton func={handleAboutClick}>ABOUT</NavButton>
+        <NavButton func={handleTripsClick}>TRIPS</NavButton>
+        <NavButton func={handleRentalsClick}>RENTALS</NavButton>
+        <NavButton func={handleContactUsClick}>CONTACT</NavButton>
+        <SignIn />
       </div>
     </div>
   );

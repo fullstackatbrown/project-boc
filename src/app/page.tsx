@@ -50,5 +50,5 @@ export default function Home() {
 }
 
 const handleExploreClick = () => {
-  alert("Redirect to Trips Page");
+  window.location.href = "/trips";
 };
