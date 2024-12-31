@@ -27,21 +27,35 @@ const Dropdown = ({ text }) => {
   return (
     <div
       ref={dropdownRef}
-      className="relative flex align-center justify-end w-[10em]"
+      className="relative flex align-center justify-end w-[10em] z-20"
     >
       <button onClick={toggleDropdown}>{text} ≡</button>
       {isOpen && (
         <ul className="dropdown-menu absolute top-[100%] right-0">
           <li className="text-right">View Profile</li>
-          <li className="text-right">Logout</li>
+          <li className="text-right"><button onClick={logout}>Logout</button></li>
         </ul>
       )}
     </div>
   );
 };
 
+async function logout() {
+  try {
+    const { data: userData } = await axios.get(
+      "http://localhost:8080/logout",
+      {
+        withCredentials: true,
+      },
+    );
+  } catch (error) {
+    console.log(error);
+  }
+  window.location.reload();
+}
+
 export default function GoogleSignIn() {
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState(null);
 
   const updateLogin = async () => {
     try {
@@ -52,12 +66,16 @@ export default function GoogleSignIn() {
         },
       );
       setUser(userData.name);
-    } catch {
-      console.log("Oops")
+    } catch (error) {
+      setUser("");
+      console.log("ERROR");
     }
   };
 
-  updateLogin();
+  useEffect(() => {
+    console.log("AHHHHH");
+    updateLogin();
+  }, []);
 
   const handleLoginSuccess = async (response) => {
     try {
@@ -86,6 +104,10 @@ export default function GoogleSignIn() {
     onError: handleLoginFailure,
     flow: "auth-code",
   });
+
+  if (user == null) {
+    return <div className="flex align-center justify-end px-4 w-[15em]"></div>;
+  }
 
   return (
     <div className="flex align-center justify-end px-4 w-[15em]">
