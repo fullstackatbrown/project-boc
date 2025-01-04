@@ -1,6 +1,5 @@
 "use client";
 import NavBar from "@/components/NavBar";
-import Subscribe from "@/components/WhiteButton";
 import WhiteWaterBanner from "@/components/WhiteWaterBanner";
 import { useState } from "react";
 
@@ -47,7 +46,6 @@ export default function MailingList() {
             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.edu$"
             title="Please enter a .edu email address"
           />
-          <Subscribe text="Subscribe" className="w-full max-w-md" />
         </form>
       </div>
     </div>

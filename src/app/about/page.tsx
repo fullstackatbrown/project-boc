@@ -5,7 +5,7 @@ import WhiteWaterBanner from "@/components/WhiteWaterBanner";
 
 import AboutRiver from "@/assets/images/AboutRiver.png";
 
-function Paragraph(props) {
+function Paragraph(props: { children: React.ReactNode }) {
   return (
     <div className="text-xl font-[100] text-left leading-10 mb-3">
       <p>{props.children}</p>

@@ -2,15 +2,15 @@
 import bear_vector from "@/assets/images/bear_vector.svg";
 import SignIn from "@/components/SignIn";
 
-function NavButton({ children, func }) {
+function NavButton(props: { children: React.ReactNode, func: () => void }) {
   return (
     <button
-      onClick={func}
+      onClick={props.func}
       className="hover:text-white hover:bg-boc_slate py-2 
       px-4 hover:rounded-lg cursor-pointer 
       hover:shadow-gray-700 hover:shadow"
     >
-      {children}
+      {props.children}
     </button>
   );
 }

@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { GoogleOAuthProvider, useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
 
-const Dropdown = ({ text }) => {
+const Dropdown = (props: { text : string }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -29,7 +29,7 @@ const Dropdown = ({ text }) => {
       ref={dropdownRef}
       className="relative flex align-center justify-end w-[10em] z-20"
     >
-      <button onClick={toggleDropdown}>{text} ≡</button>
+      <button onClick={toggleDropdown}>{props.text} ≡</button>
       {isOpen && (
         <ul className="dropdown-menu absolute top-[100%] right-0">
           <li className="text-right">View Profile</li>
@@ -55,7 +55,7 @@ async function logout() {
 }
 
 export default function GoogleSignIn() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState("");
 
   const updateLogin = async () => {
     try {
@@ -76,7 +76,7 @@ export default function GoogleSignIn() {
     updateLogin();
   }, []);
 
-  const handleLoginSuccess = async (response) => {
+  const handleLoginSuccess = async (response : { code:string }) => {
     try {
       const { data } = await axios.post(
         "http://localhost:8080/auth",
@@ -94,7 +94,7 @@ export default function GoogleSignIn() {
     }
   };
 
-  const handleLoginFailure = (error) => {
+  const handleLoginFailure = (error: unknown) => {
     console.error("Login failed", error);
   };
 
@@ -103,10 +103,6 @@ export default function GoogleSignIn() {
     onError: handleLoginFailure,
     flow: "auth-code",
   });
-
-  // if (user == null) {
-  //   return <div className="flex align-center justify-end px-4 w-[15em]"></div>;
-  // }
 
   return (
     <div className="flex align-center justify-end px-4 w-[15em]">

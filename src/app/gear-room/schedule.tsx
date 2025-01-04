@@ -1,8 +1,8 @@
-interface Day {
-  day: String;
-  hours: String[];
-  info?: String;
-}
+type Day = {
+  day: string;
+  hours: string[];
+  info?: string;
+};
 
 let dates: Day[] = [
   {
@@ -16,8 +16,8 @@ let dates: Day[] = [
   { day: "Friday", hours: ["4pm - 5pm"], info: "Gas Available" },
 ];
 
-function Td(props) {
-  return (<td className="p-[0.24em]">{props.children}</td>)
+function Td(props: { children: React.ReactNode }) {
+  return <td className="p-[0.24em]">{props.children}</td>;
 }
 
 export default function Schedule() {
@@ -30,7 +30,7 @@ export default function Schedule() {
             <Td>HOURS</Td>
             <Td>INFO</Td>
           </tr>
-          {dates.map((day) => (
+          {dates.map((day, index) => (
             <DayRow key={day.day} day={day} />
           ))}
         </tbody>
@@ -39,11 +39,15 @@ export default function Schedule() {
   );
 }
 
-function DayRow({ day }) {
+function DayRow({ day }: { day: Day }) {
   return (
     <tr className="divide-x divide-black px-4 py-2 text-center">
       <Td>{day.day}</Td>
-      <Td>{day.hours.map((hour) => <div key={hour}>{hour}</div>)}</Td>
+      <Td>
+        {day.hours.map((hour, index) => (
+          <div key={hour}>{hour}</div>
+        ))}
+      </Td>
       <Td>{day.info ? day.info : ""}</Td>
     </tr>
   );

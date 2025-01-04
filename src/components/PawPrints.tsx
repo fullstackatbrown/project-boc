@@ -60,7 +60,6 @@ const PawPrints = () => {
             height: "100px",
             position: "absolute", // Removed from imageData.styles, as it's now set here
             overflow: "hidden",
-            ...imageData.styles,
           }}
         >
           <Image

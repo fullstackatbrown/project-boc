@@ -13,7 +13,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
+  const CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || "default_client_id";
   return (
     <GoogleOAuthProvider clientId={CLIENT_ID}>
       <html lang="en">
