@@ -60,7 +60,7 @@ export default function GoogleSignIn() {
   const updateLogin = async () => {
     try {
       const { data: userData } = await axios.get(
-        "http://localhost:8080/protected",
+        "http://localhost:8080/me",
         {
           withCredentials: true,
         },
@@ -73,14 +73,13 @@ export default function GoogleSignIn() {
   };
 
   useEffect(() => {
-    console.log("AHHHHH");
     updateLogin();
   }, []);
 
   const handleLoginSuccess = async (response) => {
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/auth/google",
+        "http://localhost:8080/auth",
         {
           code: response.code,
         },
@@ -105,9 +104,9 @@ export default function GoogleSignIn() {
     flow: "auth-code",
   });
 
-  if (user == null) {
-    return <div className="flex align-center justify-end px-4 w-[15em]"></div>;
-  }
+  // if (user == null) {
+  //   return <div className="flex align-center justify-end px-4 w-[15em]"></div>;
+  // }
 
   return (
     <div className="flex align-center justify-end px-4 w-[15em]">
